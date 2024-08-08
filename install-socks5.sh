@@ -186,6 +186,7 @@ socks5choice=${socks5choice^^} # 转换为大写
 if [ "$socks5choice" == "Y" ]; then
   # 检查socks5目录是否存在
   if [ -d "$FILE_PATH" ]; then
+    echo "socks5目录存在"
     install_socks5
   else
     # 创建socks5目录
